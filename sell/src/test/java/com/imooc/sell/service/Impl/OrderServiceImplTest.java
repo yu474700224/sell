@@ -63,13 +63,19 @@ public class OrderServiceImplTest {
 
     @Test
     public void cancel() {
+        OrderDTO orderDTO = orderService.findOne(ORDERID);
+        orderService.cancel(orderDTO);
     }
 
     @Test
     public void finish() {
+        OrderDTO orderDTO = orderService.findOne(ORDERID);
+        orderService.finish(orderDTO);
     }
 
     @Test
     public void paid() {
+        OrderDTO orderDTO = orderService.findOne(ORDERID);
+        orderService.paid(orderDTO);
     }
 }
