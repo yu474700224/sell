@@ -26,6 +26,9 @@ public enum ResultEnum {
 
     ORDER_PAID_STUTAS_ERROR(17,"订单支付状态更新异常"),
 
+    PAPAM_ERROR(1,"参数错误"),
+
+    CART_EMPTY(18,"购物车为空")
     ;
 
     private Integer code;
